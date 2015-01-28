@@ -1,7 +1,7 @@
 jquery-closestChildren
 ===================
 
-An opposite of `closest()`: find the nearest child that matches a selector, and optionally include deeper matching children.
+An opposite of `closest()`: find the nearest child that matches a selector, and optionally return the first matching child on each descending branch.
 
 
 What this plugin is for
