@@ -104,6 +104,8 @@ Note that there's capital `C` in the middle of method name, while file and proje
 
 `selector` can be anything that the jQuery [`.filter()` method](http://api.jquery.com/filter/) uses.
 
+`all` is a boolean. Put true to search for all the closest matches (for each branch). false, or ommitted will only find the single closest match.
+
 `closestChildren` returns a jQuery collection of matched elements.
 
 Please keep in mind the following features:
