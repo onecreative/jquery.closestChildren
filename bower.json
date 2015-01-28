@@ -1,5 +1,5 @@
 {
-  "name": "jquery.closestChildren",
+  "name": "closestChildren",
   "version": "0.0.1",
   "authors": ["Adam Cook aka onecreative"],
   "description": "An opposite of `closest()`: find the nearest child that matches a selector, and optionally return the first matching child on each descending branch.",
