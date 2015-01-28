@@ -8,24 +8,16 @@
  
 ;(function($){
 	$.fn.closestChildren = function(selector,all,results) {
-		var $children;
-
-		$children = this.children();
-
+		var $children = this.children();
 		if ($children.length === 0) {
 			if (typeof results === 'object') return results;
 			else return $();
 		}
-
+		
 		if (typeof results === 'object') results = results.add($children.filter(selector));
 		else results = $children.filter(selector);
 
-		if (all !== true) {
-			if (results.length > 0) return results;
-			else return $children.closestChildMod(selector);
-		}else {
-			$children = $children.not(results);
-			return $children.closestChildMod(selector,all,results);
-		}
+		if (all !== true) return (results.length > 0) ? results : $children.closestChildren(selector);
+		else return $children.not(results).closestChildren(selector,all,results);
 	};
 })(window.jQuery);
